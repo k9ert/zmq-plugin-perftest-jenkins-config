@@ -15,7 +15,7 @@
   <publishers/>
   <buildWrappers/>
   <icon/>
-  <dsl>max = 3
+  <dsl>max = 10
 n = 3
 
 for (loopcounter=1;loopcounter&lt;=max ; loopcounter++) {
