@@ -15,12 +15,15 @@
   <publishers/>
   <buildWrappers/>
   <icon/>
-  <dsl>n = 3
+  <dsl>max = 3
+n = 3
+
+for (loopcounter=1;loopcounter&lt;=max ; loopcounter++) {
 
 jobsmap = [:]
 jobsclosures = []
 
-for (int i = 0; i &lt; n ; i++) {
+for (int i = 0; i &lt; loopcounter ; i++) {
 	jobsclosures &lt;&lt;{ jobsmap.put(String.valueOf(i),build( &quot;test&quot;))}
 }
 
@@ -34,7 +37,7 @@ guard {
 
 sleep(10000)
 
-
+}
 </dsl>
   <buildNeedsWorkspace>false</buildNeedsWorkspace>
 </com.cloudbees.plugins.flow.BuildFlow>
