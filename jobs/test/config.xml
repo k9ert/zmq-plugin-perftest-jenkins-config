@@ -23,7 +23,7 @@
   <concurrentBuild>true</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>for i in $(seq 1 1000); 
+      <command>for i in $(seq 1 10000); 
 do
 
 #echo $( cat /dev/urandom | env LC_CTYPE=C tr -cd &apos;a-f0-9&apos; | head -c 16 )
