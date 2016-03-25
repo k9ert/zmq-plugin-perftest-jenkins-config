@@ -23,7 +23,7 @@ for (loopcounter=1;loopcounter&lt;=max ; loopcounter++) {
 jobsmap = [:]
 jobsclosures = []
 
-for (int i = 2; i &lt; loopcounter ; i++) {
+for (int i = 0; i &lt; loopcounter ; i++) {
 	jobsclosures &lt;&lt;{ jobsmap.put(String.valueOf(i)+&quot;testt&quot;,build( &quot;test&quot;,NUMBER : String.valueOf(i)+&quot;testt&quot;))}
 }
 
