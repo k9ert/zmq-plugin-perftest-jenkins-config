@@ -17,7 +17,6 @@
 do
 
 echo $( cat /dev/urandom | env LC_CTYPE=C tr -cd &apos;a-f0-9&apos; | head -c 16 )
-sleep 1
 done</command>
     </hudson.tasks.Shell>
   </builders>
