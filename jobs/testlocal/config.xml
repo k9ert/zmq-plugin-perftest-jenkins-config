@@ -21,7 +21,5 @@ done</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
-  <buildWrappers>
-    <jenkins.plugins.logstash.ZmqBuildWrapper plugin="logstash@1.1.2-SNAPSHOT"/>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
