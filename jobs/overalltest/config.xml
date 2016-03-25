@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.cloudbees.plugins.flow.BuildFlow plugin="build-flow-plugin@0.18">
+  <actions/>
+  <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
-  <canRoam>false</canRoam>
+  <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
@@ -13,5 +15,11 @@
   <publishers/>
   <buildWrappers/>
   <icon/>
+  <dsl>parallel (
+    // job 1, 2 and 3 will be scheduled in parallel.
+    { build(&quot;test&quot;) },
+    { build(&quot;test&quot;) },
+    { build(&quot;test&quot;) }
+)</dsl>
   <buildNeedsWorkspace>false</buildNeedsWorkspace>
 </com.cloudbees.plugins.flow.BuildFlow>
