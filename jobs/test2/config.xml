@@ -8,8 +8,8 @@
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
           <name>NUMBER</name>
-          <description>Just a random parameter doesnt have any impact on the build</description>
-          <defaultValue>0</defaultValue>
+          <description>Number of loflines</description>
+          <defaultValue>1000</defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
@@ -23,7 +23,7 @@
   <concurrentBuild>true</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>for i in $(seq 1 100000); 
+      <command>for i in $(seq 1 $NUMBER); 
 do
 
 #echo $( cat /dev/urandom | env LC_CTYPE=C tr -cd &apos;a-f0-9&apos; | head -c 16 )
