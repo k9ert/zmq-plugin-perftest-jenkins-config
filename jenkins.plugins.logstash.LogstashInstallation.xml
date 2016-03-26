@@ -7,5 +7,5 @@
   <username></username>
   <password></password>
   <key>/logstash-jk/jenkinslogs</key>
-  <zmqprefix>jenkins.getRootUrl() + &quot;/&quot; + build.getProject().getFullName()+&quot;/&quot;+build.getNumber()</zmqprefix>
+  <zmqprefix>jenkins.getRootUrl() + &quot;/job/&quot; + build.getProject().getName()+&quot;/&quot;+build.getNumber()</zmqprefix>
 </jenkins.plugins.logstash.LogstashInstallation_-Descriptor>
