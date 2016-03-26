@@ -7,5 +7,5 @@
   <username></username>
   <password></password>
   <key>/logstash-jk/jenkinslogs</key>
-  <zmqprefix>theprefix,yes</zmqprefix>
+  <zmqprefix>&quot;yes, the prefix&quot;</zmqprefix>
 </jenkins.plugins.logstash.LogstashInstallation_-Descriptor>
